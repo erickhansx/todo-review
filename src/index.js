@@ -7,8 +7,6 @@ const reloadWindow = document.querySelector('.fa-arrows-rotate');
 // Event Listener to render tasks when window loads.
 window.addEventListener('DOMContentLoaded', UI.renderTasks);
 
-// Event Listeners
-
 // Event listener to add a Task
 const inputText = document.querySelector('.input-text');
 inputText.addEventListener('keydown', (e) => {
@@ -71,10 +69,3 @@ reloadWindow.addEventListener('click', () => {
 // Event Listener for change on checkbox
 
 Checkbox.changeListener();
-
-// Check if Webpack is currently on Development or Production mode.
-if (process.env.NODE_ENV === 'production') {
-  console.log('Production Mode');
-} else if (process.env.NODE_ENV === 'development') {
-  console.log('Development Mode');
-}
